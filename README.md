@@ -19,4 +19,4 @@ npm start
 
 ## Deployment
 
-https://movie-review-kt.netlify.app/
+https://movie-review-app-kt.netlify.app/
