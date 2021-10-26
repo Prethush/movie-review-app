@@ -72,7 +72,7 @@ function Movie(props) {
   }
 
   if(error) {
-    return <h2 className="text-red-500 text-xl font-bold">{error}</h2>
+    return <h2 className="text-red-500 text-xl font-bold text-center my-8">{error}</h2>
   }
   
   if(loading) {

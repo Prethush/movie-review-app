@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {withRouter} from "react-router-dom";
-import {searchURL, addMovie} from "../utils/constant";
+import {searchURL, addMovie, API_KEY} from "../utils/constant";
 import Loader from './Loader';
 
-let API_KEY="7d689ed7cab24730c8370165dec80da3";
 
 function Search(props) {
   let [loading, setLoading] = useState(false);
