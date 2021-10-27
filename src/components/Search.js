@@ -3,7 +3,6 @@ import {withRouter} from "react-router-dom";
 import {searchURL, addMovie, API_KEY} from "../utils/constant";
 import Loader from './Loader';
 
-
 function Search(props) {
   let [loading, setLoading] = useState(false);
   let [movies, setMovies] = useState("");

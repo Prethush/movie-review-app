@@ -2,6 +2,7 @@ import React, {useState, useEffect, useContext, useCallback} from 'react'
 import { getProfile, getUser} from '../utils/constant';
 import Loader from './Loader';
 import { withRouter, Link} from 'react-router-dom';
+import { getDate } from '../utils/validate';
 import UserContext from '../context/userContext';
 import ReviewedMovies from './ReviewedMovies';
 import WatchList from './WatchList';
@@ -56,11 +57,6 @@ function Profile(props) {
     })
     .catch((error) => console.log(error));
   }, [username, getMovies]);
-
-  const getDate = (date) => {
-    let newDate = new Date(date).toDateString();
-    return newDate;
-  }
 
   if(loading) {
     return < Loader />

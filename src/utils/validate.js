@@ -33,3 +33,8 @@ export function validate(error, name, value) {
    }
   
 }
+
+export const getDate = (date) => {
+    let newDate = new Date(date).toDateString();
+    return newDate;
+  }

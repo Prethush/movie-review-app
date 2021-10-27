@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { addMovie } from '../utils/constant';
+import { addMovie} from '../utils/constant';
 import Loader from './Loader';
 import {Link} from "react-router-dom";
 

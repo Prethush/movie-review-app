@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react'
 import { withRouter } from 'react-router-dom';
 import { addMovie } from '../utils/constant';
+import { getDate } from '../utils/validate';
 import Loader from './Loader';
 import ReviewBox from './ReviewBox';
 import UserContext from '../context/userContext';
@@ -66,11 +67,7 @@ function Movie(props) {
     .catch((error) => console.log(error));
   }
 
-  const getDate = (date) => {
-    let newDate = new Date(date).toDateString();
-    return newDate;
-  }
-
+  
   if(error) {
     return <h2 className="text-red-500 text-xl font-bold text-center my-8">{error}</h2>
   }

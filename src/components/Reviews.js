@@ -2,15 +2,12 @@ import React, {useContext} from 'react';
 import UserContext from '../context/userContext';
 import Loader from './Loader';
 import {Link} from "react-router-dom";
+import { getDate } from '../utils/validate';
 
 export default function Reviews(props) {
 
   let userData = useContext(UserContext);
-  const getDate = (date) => {
-    let newDate = new Date(date).toDateString();
-    return newDate;
-  }
-
+ 
   if(!props.reviews) {
     return < Loader />
   }
