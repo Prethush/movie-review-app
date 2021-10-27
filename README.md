@@ -1,4 +1,4 @@
-# Blog App
+# Movie Review App
 
 This is a movie review application created using ReactJS and Tailwind at the front end and Node, Express, and MongoDB at the back end. The front end of the app is hosted on netlify and back end on heroku.
 
